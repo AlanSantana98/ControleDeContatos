@@ -1,0 +1,35 @@
+Clicar com o botão direito em cima do projeto e selecionar a 
+opção:  
+
+>> GERENCIAR PACOTES DO NUGET:
+
+Baixar os seguintes pacotes:
+
+>> Microsoft.EntityFrameworkCore 
+
+>> Microsoft.EntityFrameworkCore.Design
+
+>> Microsoft.EntityFrameworkCore.Tools
+
+>> Microsoft.EntityFrameworkCore.SqlServer
+
+(Obs: Esses pacotes servem para fazer a comunicação com o Bnaco de dados.)
+
+
+
+                         < Criando Migration >
+
+>> Ferramentas
+>> Gerenciados de pacotes NuGet
+
+PM> Add-Migration CriandoTabelaContatos -Context BancoContext
+
+
+
+       < Criando Banco de dados através do Migration no SqlServer >
+
+>>Ferramentas
+>> Gerenciados de pacotes NuGet
+
+PM> Update-Database -Context BancoContext
+

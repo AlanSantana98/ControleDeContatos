@@ -1,0 +1,275 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+  color: #0366d6;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  font-size: 14px;
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+
+.field-validation-error {             /* Definindo a cor das mensagens de erro.*/
+    color: #e01d1d;
+}
+
+.close-alert {
+    position: absolute;
+    right: -10px;
+    top: -15px;
+    border-radius: 15px;
+    width: 30px;
+    height: 31px;
+}
+
+.LoginUsuario {
+    position: center;
+    border: 8px solid;
+}
+
+
+/*Codigo Menu lateral*/
+.print {
+    display: none;
+}
+
+.no-print {
+    display: block;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    display: flex;
+    background-color: rgb(215, 215, 215);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#sidebar {                             /*cor de fundo Menu*/
+    background-color: rgb(0, 0, 0);
+    padding: 30px;
+    text-align: center;
+    border-radius: 0px 50px 50px 0px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    box-shadow: 0px 0px 15px #c0c0c0;
+}
+
+#top {
+    height: 85%;
+}
+
+#imgPerfil {
+    border-radius: 100%;
+    width: 60%;
+    border: 8px solid #C3D343;
+}
+
+#top h2 {
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+
+.btn-menu {                      /*Botões do Menu*/
+    margin-bottom: 20px;
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 25px;
+    background-color: #3f6128;
+    color: #1b6ec2;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+    .btn-menu:hover {
+        background-color: #324e20;
+    }
+
+    .btn-menu a {
+        text-decoration: none;
+        color: #fff;
+        margin-left: -15px;
+        padding: 5px 50px;
+    }
+
+.btn-sair {
+    width: 100%;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 25px;
+    background-color: #fff;
+    color: red;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+    .btn-sair:hover {
+        background-color: rgb(215, 215, 215);
+    }
+
+#bottom {
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#conteudo {
+    width: 100%;
+    padding: 30px;
+}
+
+#topo {
+    background-color: #fff;
+    width: 100%;
+    height: 60px;
+    border-radius: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 15px #c0c0c0;
+}
+
+    #topo h3 {
+        font-size: 22px;
+        margin-left: 25px;
+        margin-bottom: 0px;
+        margin-top: 0px;
+        color: #3f6128;
+        font-weight: bold;
+    }
+
+        #topo h3 i {
+            margin-right: 15px;
+        }
+
+#div-btn-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    #div-btn-add p {
+        margin-bottom: 0px;
+        margin-right: 10px;
+    }
+
+    #btn-add:hover {
+        background-color: #324e20;
+    }
+
+#container {
+    margin-top: 20px;
+    display: flex;
+}
+
+#lista {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 15px #c0c0c0;
+    pointer-events: auto;
+}
+
+table {
+    margin-bottom: 0px;
+}
+
+#topo-tabela {
+    background-color: #3F6128;
+    border-radius: 30px;
+    border: none;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.btn-lista {
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.texto-lista {
+    vertical-align: middle;
+}
+
+

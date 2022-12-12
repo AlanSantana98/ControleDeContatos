@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Controle De Contatos</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.12.1/datatables.min.css" />  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <div id="sidebar">
+        <div id="top">
+            <img id="imgPerfil" src="/css/fotos/logo.jpeg" alt="foto_perfil">  @*foto do perfil*@
+            <h2>Bem vindo!</h2>
+            <h2 style="color: #C3D343; margin-top: -25px;">Alan Santana</h2>
+            <div>
+                <button class="btn-menu">
+                    <i class="fa fa-home fa-lg"></i>
+                    @Html.ActionLink("Home", "Index", "Home")
+                </button>
+                <button class="btn-menu">
+                    <i class="fa fa-user fa-lg" aria-hidden="true"></i>
+                    @Html.ActionLink("Usuario", "Index", "Usuario")
+                </button>
+                <button class="btn-menu">
+                    <i class="fa fa-address-book fa-lg" aria-hidden="true"></i>
+                    @Html.ActionLink("Contato", "Index", "Contato")
+                </button>
+                 <button class="btn-menu">
+                    <i class="fa fa-address-book fa-lg" aria-hidden="true"></i>
+                    @Html.ActionLink("AlterarSenha", "Index", "AlterarSenha")
+                </button>
+                 <button class="btn-menu">
+                     <a class="nav-link text-break" asp-area="" asp-controller="Login" asp-action="Sair">Sair</a>
+                     <i class="fa-regular fa-arrow-right-from-bracket"></i>
+                 </button>            
+            </div>
+        </div>
+       <!--<div id="bottom">
+            <img src="/css/fotos/logo.jpeg" alt="logo_empresa" width="40%"> @*logo da empresa*@
+        </div> --> 
+    </div>
+    <div id="conteudo">     
+        @RenderBody()
+    </div>
+
+   @* <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2022 - Controle De Contatos
+        </div>
+    </footer>*@
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.12.1/datatables.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
