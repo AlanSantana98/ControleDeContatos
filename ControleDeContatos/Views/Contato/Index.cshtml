@@ -6,10 +6,7 @@
 
 <div class="text-center">
 
-    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-        <a class="btn btn-primary" role="button" asp-controller="Contato" asp-action="Criar">Adicionar novo Contato</a>
-    </div>
-    <br />
+     
 
     @if (TempData["MensagemSucesso"] != null)
     {
@@ -51,12 +48,15 @@
                             <td>@contato.Nome</td>
                             <td>@contato.Email</td>
                             <td>@contato.Celular</td>
-                            <td>
-                                <div class="btn-group" role="group">
-                                    <a role="button" class="btn btn-primary" asp-route-id="@contato.Id" asp-controller="Contato" asp-action="Editar">Editar</a>
-                                    <a role="button" class="btn btn-danger" asp-route-id="@contato.Id" asp-controller="Contato" asp-action="ApagarComfirmacao">Deletar</a>
-                                </div>
+
+                            <td> 
+                            <a class="btn btn-success" role="button" asp-controller="Contato" asp-action="Criar"><i class="fa-regular fa-plus"></i></a>   
+
+                            <a role="button" class="btn btn-primary" asp-route-id="@contato.Id" asp-controller="Contato" asp-action="Editar"><i class="fa-solid fa-pen-to-square"></i></a>                                                                       
+                                     
+                            <a role="button" class="btn btn-danger" asp-route-id="@contato.Id" asp-controller="Contato" asp-action="ApagarComfirmacao"><i class="fa-solid fa-trash"></i></a>                              
                             </td>
+
                         </tr>
                     }
             }
