@@ -37,14 +37,28 @@
                      <i class="fa-sharp fa-solid fa-circle-xmark"></i>
                      <a class="nav-link text-break" asp-area="" asp-controller="Login" asp-action="Sair">Sair</a>                    
                  </button>            
-            </div>
+            </div>           
         </div>
        <!--<div id="bottom">
             <img src="/css/fotos/logo.jpeg" alt="logo_empresa" width="40%"> @*logo da empresa*@
         </div> --> 
     </div>
-    <div id="conteudo">     
+    <div id="conteudo">        
         @RenderBody()
+     
+      @*<picture id="Logomarca">
+        <img src="~/css/Fotos/logo.jpeg" alt="Logo" width="600"
+          height="300" longdesc="#ASDivulga">
+      </picture>*@
+@*
+       <div id="#ASDivulga">
+        <h1>As Divulga Digital</h1>
+        <p>
+       O que é uma agência de marketing digital? Uma agência de marketing digital é uma empresa especializada em promover marcas e produtos em canais digitais, 
+       com estratégias de divulgação e relacionamento. Esse tipo de empresa atende clientes que desejam terceirizar o marketing digital com um parceiro.
+        </p>
+      </div>*@
+       
     </div>
 
    @* <footer class="border-top footer text-muted">
@@ -56,6 +70,9 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.12.1/datatables.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/css/site.css"></script>
+    <script src="~/js/BuscaCep.js"></script>
+    <script src="~/js/mascara.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace ControleDeContatos.Migrations
 {
-    public partial class CriandoTabelaContatosUsuarios : Migration
+    public partial class CraindoTabelaContatos_Usuarios : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -34,7 +34,13 @@ namespace ControleDeContatos.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Nome = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Celular = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Cep = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Logradouro = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Complemento = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Bairro = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Localidade = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Uf = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Celular = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     UsuarioId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>

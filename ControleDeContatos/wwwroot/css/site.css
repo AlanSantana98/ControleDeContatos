@@ -154,7 +154,7 @@ body {
     cursor: pointer;
 }
 
-    .btn-menu:hover {
+    .btn-menu:hover {                /* Sombra dos botões de Menu */
         background-color: #324e20;
     }
 
@@ -179,7 +179,7 @@ body {
     cursor: pointer;
 }
 
-    .btn-sair:hover {
+    .btn-sair:hover {  
         background-color: rgb(215, 215, 215);
     }
 
@@ -269,6 +269,10 @@ table {
 
 .texto-lista {
     vertical-align: middle;
+}
+
+.Logomarca {
+   position:absolute;
 }
 
 

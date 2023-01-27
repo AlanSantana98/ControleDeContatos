@@ -42,6 +42,10 @@ namespace ControleDeContatos.Repositorio
             contatoDB.Nome = contato.Nome;
             contatoDB.Email = contato.Email;
             contatoDB.Celular = contato.Celular;
+            contatoDB.Cep = contato.Cep;
+            contatoDB.Bairro = contato.Bairro;
+            contatoDB.Localidade = contato.Localidade;
+            contatoDB.Uf = contato.Uf;
 
             _bancoContext.Contatos.Update(contatoDB);
             _bancoContext.SaveChanges();

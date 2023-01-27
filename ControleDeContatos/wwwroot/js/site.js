@@ -60,8 +60,9 @@ function getDatatable(id) {
 
 }
 
-//Fechando mensagem de  cadastro ou erro//
+//Fechando mensagem de cadastro ou erro//
 
 $('.close-alert').click(function () {
     $('.alert').hide('hide');
 });
+

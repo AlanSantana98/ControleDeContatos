@@ -26,16 +26,34 @@ namespace ControleDeContatos.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<string>("Bairro")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Celular")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Cep")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Complemento")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Localidade")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Logradouro")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Nome")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Uf")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int?>("UsuarioId")
